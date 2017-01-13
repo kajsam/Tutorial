@@ -9,10 +9,8 @@
 Make repository\
 Delete repository: https://github.com/kajsam/\'91repository\'92/settings\
 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 Cheatsheet: {\field{\*\fldinst{HYPERLINK "http://ndpsoftware.com/git-cheatsheet.html#loc=local_repo;"}}{\fldrslt http://ndpsoftware.com/git-cheatsheet.html#loc=local_repo;}}\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 \
+Cheatsheet: {\field{\*\fldinst{HYPERLINK "http://ndpsoftware.com/git-cheatsheet.html#loc=local_repo;"}}{\fldrslt http://ndpsoftware.com/git-cheatsheet.html#loc=local_repo;}}\
+\
 In terminal:\
 cd - to folder where you want your project to be. \
 mkdir - project folder, go there\
@@ -23,22 +21,25 @@ git add \'91filename\'92\
 		: stages specific file\
 git commit -m \'93Comments\'94 \
 		: logs and stores all changes since last commit to repository\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 git commit -a -m \'93Comments\'94\
+git commit -a -m \'93Comments\'94\
 		: do both add and commit\
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 git remote add origin https://github.com/kajsam/\'91repository\'92	\
+git remote add origin https://github.com/kajsam/\'91repository\'92	\
    		: create remote git repository at GitHub\
 git push -u origin master	\
 		:  update the remote with all local updates (excluding local branches)\
 git clone https://github.com/kajsam/\'91repository\'92	\
 		: copy all the files including the git repository to where you stand\
 git pull 	: incorporates changes from the remote to the workspace\
+git rm \'91filename\'92\
+		: removes file, git push to remove file from remote rep\
 \
 \
 \
 \
 git status	: gives you the status\
+git ls-files	: list of files that git is tracking\
+git log	: gives the log\
+\
 \
 \
 \
